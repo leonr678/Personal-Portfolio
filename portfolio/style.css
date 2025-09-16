@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Sansation", sans-serif;
+  background: linear-gradient(135deg, #73A9C9, #f0f6f9); /* background blends from blue to white*/
+}
+
+/* Center the profile-pic and header */
+.main-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Profile picture styling - circular with outlining to look more friendly */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;    /* make image circular */
+  object-fit: cover;
+  border: 2px solid #333;
+}
+
+/* Game project image styling - rectangle with outlining */
+.game-pic {
+  width: 180px;
+  height: 150px;
+  object-fit: cover;
+  border: 1px solid #333;
+}
+
+/* Name header styling */
+.name-header {
+  margin-top: 20px;
+  font-size: 29px;
+  color: #333;
+}
+
+/* Occupation header styling */
+.occupation-header {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Other header styling */
+.section-header {
+  margin-top: 20px;
+  font-size: 23px;
+  color: #333;
+}
+
+/* Project header styling */
+.project-header {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Project sub-header styling */
+.project-subheader {
+  margin-top: 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  max-width: 250px;
+}
+
+/* horizontal rules for neat layout - changing thickness, colour, and spacing */
+hr {
+  border: none;            /* removes default border */
+  height: 2px;             
+  background-color: #333;
+  margin: 40px 0;          /* space above and below */
+}
+
+/* paragraphs - make text bit smaller than headers and lower width so its comfy to read */
+p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 auto;
+  max-width: 1100px;  /* so text has gap at edge of page for comfort to the eyes */
+}
+
+/* displaying game projects in row instead of grid so it doesn't look like a spreadsheet */
+.games-row {
+  display: flex;      
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  padding: 20px;
+}
+
+/* each game card - align vertically to look neater */
+.game-card {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+}
+
+/*hover effect for more fun interaction*/
+.game-pic:hover {
+  transform: scale(1.03); /* just a slight enlargement to catch the eye */
+  transition: transform 0.2s ease; /* to give a sort of animated effect */
+}
