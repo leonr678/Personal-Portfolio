@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Sansation", sans-serif;
-  background: linear-gradient(135deg, #73A9C9, #f0f6f9); /* background blends from blue to white*/
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #b1c3d8, #f0f6f9); /* background blends from blue to white*/
 }
 
 /* Center the profile-pic and header */
@@ -20,10 +20,18 @@ body {
   border: 2px solid #333;
 }
 
-/* Game project image styling - rectangle with outlining */
+/* Game project image styling - slightly wide rectangle with outlining */
 .game-pic {
   width: 180px;
   height: 150px;
+  object-fit: cover;
+  border: 1px solid #333;
+}
+
+/* iOS project image styling - long rectangle with outlining */
+.ios-pic {
+  width: 150px;
+  height: 320px;
   object-fit: cover;
   border: 1px solid #333;
 }
