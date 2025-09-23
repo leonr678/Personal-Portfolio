@@ -1,6 +1,6 @@
 # Personal-Portfolio
 
-My portfolio with a showcase of projects written in HTML and CSS.
+My portfolio with a showcase of my projects, ranging from mobile apps to PC video games. The website was written in HTML and CSS.
 
 # Usage
 
