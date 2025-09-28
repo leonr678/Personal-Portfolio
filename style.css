@@ -13,9 +13,9 @@ body {
 
 /* Profile picture styling - circular with outlining to look more friendly */
 .profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;    /* make image circular */
+  width: 300px;
+  height: 300px;
+  border-radius: 30%;    /* make image slightly rounded */
   object-fit: cover;
   border: 2px solid #6a6a6a;
 }
@@ -39,17 +39,37 @@ body {
 /* Name header styling */
 .name-header {
   margin-top: 20px;
-  font-size: 50px;
+  font-size: 65px;
   font-weight: 300;
   color: #333;
 }
 
 /* Occupation header styling */
 .occupation-header {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 25px;
   font-weight: 300;
   color: #333;
+}
+
+/* displaying name and occ in vstack */
+.name-occupation-col {
+  display: flex;      
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* displaying name-occ column and photo in a row */
+.name-photo-row {
+  display: flex;      
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  padding: 20px;
 }
 
 /* Section header styling */
