@@ -24,6 +24,7 @@ body {
 .game-pic {
   width: 180px;
   height: 150px;
+  border-radius: 10%;
   object-fit: cover;
   border: 1px solid #6a6a6a;
 }
@@ -32,6 +33,7 @@ body {
 .ios-pic {
   width: 150px;
   height: 320px;
+  border-radius: 10%;
   object-fit: cover;
   border: 1px solid #6a6a6a;
 }
@@ -39,7 +41,7 @@ body {
 /* Name header styling */
 .name-header {
   margin-top: 20px;
-  font-size: 65px;
+  font-size: 68px;
   font-weight: 300;
   color: #333;
 }
