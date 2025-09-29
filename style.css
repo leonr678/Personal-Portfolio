@@ -33,7 +33,7 @@ body {
 .ios-pic {
   width: 150px;
   height: 320px;
-  border-radius: 20%;
+  border-radius: 10%;
   object-fit: cover;
   border: 1px solid #6a6a6a;
 }
