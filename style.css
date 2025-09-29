@@ -24,7 +24,7 @@ body {
 .game-pic {
   width: 180px;
   height: 150px;
-  border-radius: 10%;
+  border-radius: 20%;
   object-fit: cover;
   border: 1px solid #6a6a6a;
 }
@@ -33,7 +33,7 @@ body {
 .ios-pic {
   width: 150px;
   height: 320px;
-  border-radius: 10%;
+  border-radius: 20%;
   object-fit: cover;
   border: 1px solid #6a6a6a;
 }
