@@ -65,8 +65,8 @@ li a:hover {
 
 /* Game project image styling - slightly wide rectangle with outlining */
 .game-pic {
-  width: 180px;
-  height: 150px;
+  width: 265px;
+  height: 220px;
   border-radius: 20%;
   object-fit: cover;
   border: 1px solid #6a6a6a;
@@ -128,8 +128,8 @@ li a:hover {
 
 /* Section header styling */
 .section-header {
-  margin-top: 20px;
-  font-size: 23px;
+  margin-top: 90px;
+  font-size: 28px;
   font-weight: 300;
   color: #333;
 }
@@ -137,7 +137,7 @@ li a:hover {
 /* Project header styling */
 .project-header {
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 300;
   color: #333;
   text-align: center;
@@ -156,9 +156,17 @@ li a:hover {
 /* horizontal rules for neat layout - changing thickness, colour, and spacing */
 hr {
   border: none;            /* removes default border */
-  height: 2px;             
+  height: 30px;             
   background-color: #c8d4e3;
   margin: 40px 0;          /* space above and below */
+}
+
+/* lighter coloured horizontal rule */
+.light-hr {
+  border: none;           
+  height: 30px;             
+  background-color: #e4eaf2;
+  margin: 40px 0;         
 }
 
 /* paragraphs - make text bit smaller than headers and lower width so its comfy to read */
@@ -181,6 +189,16 @@ p {
   max-width: 1050px;
 }
 
+.intro-projects {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 5px;
+  margin-bottom: 70px;
+  max-width: 550px;
+}
+
 strong { 	/* used for keywords, 700 weight was a bit too much for the eyes*/
   font-weight: 400;
 }
@@ -193,7 +211,7 @@ strong { 	/* used for keywords, 700 weight was a bit too much for the eyes*/
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 120px;
+  gap: 170px;
   padding: 20px;
 }
 
