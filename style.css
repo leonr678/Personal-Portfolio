@@ -2,18 +2,20 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(135deg, #cdd8e6, #fefbfc); /* background blends from faint blue to faint red*/
+  background: linear-gradient(135deg, #010101, #121312); /* background blends from black to dark grey*/
 }
 
 /* Center the profile-pic and header */
 .main-container {
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
-/* nav bar in top right corner with faint blue bg */
+/* nav bar in top right corner with grey bg */
 nav {
   position: fixed;
+  z-index: 1;
   top: 0;
   right: 0;
   width: 100%;
@@ -21,7 +23,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 5px 30px;
-  background: #b2c3d9;
+  background: #171817;
+  border: 1px solid #6a6a6a;
 }
 
 ul {
@@ -37,28 +40,38 @@ ul {
   font-size: 25px;
   font-weight: 400;
   margin-left: 60px;
-  color: #333;
+  color: #ffffff;
 }
 
 /* nav bar text */
 li a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   font-weight: 300;
   display: inline-block;  /* allows transform to work */
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* blue when hovered over */
+/* light grey and enlarged when hovered over */
 li a:hover {
-  color: #0077ff;
-  transform: scale(1.2);
+  color: #999e99;
+  transform: scale(1.3);
+}
+
+/* light grey and enlarged when hovered over */
+a h4:hover {
+  color: #dbdcdb;
+  transform: scale(1.1);
+}
+
+.linkedin_link {
+  color: #949994
 }
 
 /* Profile picture styling - circular with outlining to look more friendly */
 .profile-pic {
-  width: 500px;
-  height: 500px;
+  width: 430px;
+  height: 430px;
   border-radius: 30%;    /* make image slightly rounded */
   object-fit: cover;
 }
@@ -67,6 +80,7 @@ li a:hover {
 .game-pic {
   width: 265px;
   height: 220px;
+  z-index: 1;
   border-radius: 20%;
   object-fit: cover;
   border: 1px solid #6a6a6a;
@@ -76,7 +90,7 @@ li a:hover {
 .ios-pic {
   width: 150px;
   height: 320px;
-  border-radius: 10%;
+  border-radius: 7%;
   object-fit: cover;
   border: 1px solid #6a6a6a;
 }
@@ -84,17 +98,17 @@ li a:hover {
 /* Name header styling */
 .name-header {
   margin-top: 20px;
-  font-size: 74px;
-  font-weight: 300;
-  color: #333;
+  font-size: 58px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 /* Occupation header styling */
 .occupation-header {
   margin-top: 5px;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 300;
-  color: #333;
+  color: #ffffff;
 }
 
 /* displaying name and occ in vstack */
@@ -108,11 +122,11 @@ li a:hover {
 
 /* home description styling */
 .short-home-des {
-  margin-top: 10px;
-  max-width: 550px;
-  font-size: 20px;
+  margin-top: 20px;
+  max-width: 530px;
+  font-size: 19px;
   font-weight: 300;
-  color: #333;
+  color: #ffffff;
 }
 
 /* displaying name-occ column and photo in a row */
@@ -122,24 +136,24 @@ li a:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 150px;
+  gap: 80px;
   padding: 60px;
 }
 
 /* Section header styling */
 .section-header {
   margin-top: 90px;
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 300;
-  color: #333;
+  color: #ffffff;
 }
 
 /* Project header styling */
 .project-header {
   margin-top: 20px;
-  font-size: 21px;
+  font-size: 23px;
   font-weight: 300;
-  color: #333;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -148,7 +162,7 @@ li a:hover {
   margin-top: 15px;
   font-size: 17px;
   font-weight: 300;
-  color: #333;
+  color: #ffffff;
   text-align: center;
   max-width: 250px;
 }
@@ -157,7 +171,7 @@ li a:hover {
 hr {
   border: none;            /* removes default border */
   height: 30px;             
-  background-color: #c8d4e3;
+  background-color: #131413;
   margin: 40px 0;          /* space above and below */
 }
 
@@ -165,7 +179,7 @@ hr {
 .light-hr {
   border: none;           
   height: 30px;             
-  background-color: #e4eaf2;
+  background-color: #1a1c1a;
   margin: 40px 0;         
 }
 
@@ -174,7 +188,7 @@ p {
   font-size: 17px;
   font-weight: 300;
   line-height: 1.6;
-  color: #333;
+  color: #ffffff;
   margin: 0 auto;
   max-width: 1100px;  /* so text has gap at edge of page for comfort to the eyes */
 }
@@ -183,7 +197,7 @@ p {
   font-size: 17px;
   font-weight: 300;
   line-height: 1.6;
-  color: #333;
+  color: #ffffff;
   margin-top: 50px;
   margin-bottom: 55px;
   max-width: 1050px;
@@ -193,7 +207,7 @@ p {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  color: #333;
+  color: #ffffff;
   margin-top: 5px;
   margin-bottom: 70px;
   max-width: 550px;
@@ -211,7 +225,7 @@ strong { 	/* used for keywords, 700 weight was a bit too much for the eyes*/
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 170px;
+  gap: 130px;
   padding: 20px;
 }
 
@@ -221,15 +235,31 @@ strong { 	/* used for keywords, 700 weight was a bit too much for the eyes*/
   flex-direction: column; 
   justify-content: center; 
   align-items: center;
+  background-color: #181918;
+  border-radius: 15px;
+  padding: 40px;
 }
+
+/* the copyright */
+footer {
+  margin-top: 70px;
+  text-align: center;
+  padding: 20px 0px;
+  color: #ffffff;
+}
+
+.small_text {
+  font-size: 15px;
+}
+
 
 /*hover effect for more fun interaction*/
 .game-pic:hover {
-  transform: scale(1.03); /* just a slight enlargement to catch the eye */
+  transform: scale(1.06); /* just a slight enlargement to catch the eye */
   transition: transform 0.2s ease; /* to give a sort of animated effect */
 }
 
 .ios-pic:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
   transition: transform 0.2s ease;
 }
