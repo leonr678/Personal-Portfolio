@@ -95,6 +95,13 @@ a h4:hover {
   border: 1px solid #6a6a6a;
 }
 
+/* icon image styling */
+.icon-pic {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
 /* Name header styling */
 .name-header {
   margin-top: 20px;
@@ -138,6 +145,17 @@ a h4:hover {
   justify-content: center;
   gap: 80px;
   padding: 60px;
+}
+
+/* displaying icons in a row */
+.icon-row {
+  display: flex;      
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
 }
 
 /* Section header styling */
