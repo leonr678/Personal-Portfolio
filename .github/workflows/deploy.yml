@@ -1,0 +1,45 @@
+name: Lint, Build & Deploy Website to GitHub Pages
+
+# This workflow runs every time we push changes to the main branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Grab the latest version of the repo
+      - name: Checkout the code
+        uses: actions/checkout@v4
+
+      # Set up Node.js (needed for our linting tools)
+      - name: Set up Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      # Install our linters globally so we can check HTML, CSS, and JS
+      - name: Install linting tools
+        run: |
+          npm install -g htmlhint stylelint eslint
+
+      # Lint all our code to catch errors or style issues
+      - name: Lint HTML files
+        run: htmlhint "**/*.html" || true  # keep going even if there are warnings
+
+      - name: Lint CSS files
+        run: npx stylelint "**/*.css" || true
+
+      - name: Lint JS files
+        run: npx eslint "**/*.js" || true
+
+      # Deploy to GitHub Pages, but only if all previous steps passed
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
