@@ -33,11 +33,8 @@ jobs:
       - name: Lint CSS files
         run: npx stylelint "**/*.css" || true
 
-      - name: Install ESLint v8
-        run: npm install -g eslint@8
-
       - name: Lint JS files
-        run: eslint "**/*.js" || true
+        run: npx eslint "**/*.js" || true
 
       # Deploy to GitHub Pages, but only if all previous steps passed
       - name: Deploy to GitHub Pages
