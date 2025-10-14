@@ -1,0 +1,332 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #010101, #121312); /* background blends from black to dark grey*/
+}
+
+/* Center the profile-pic and header */
+.main-container {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* nav bar in top right corner with grey bg */
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px;
+  background: #171817;
+  border: 1px solid #6a6a6a;
+}
+
+
+/* Nav background fades in when scrolled */
+nav.scrolled {
+  background-color: rgba(23, 24, 23, 0.9);
+  backdrop-filter: blur(8px);
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-right: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+nav ul.show-nav {
+  display: flex;
+}
+
+/* name on left of nav bar */
+.name-nav {
+  font-size: 25px;
+  font-weight: 400;
+  margin-left: 60px;
+  color: #ffffff;
+}
+
+/* nav bar text */
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 300;
+  display: inline-block;  /* allows transform to work */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* light grey and enlarged when hovered over */
+nav ul li a:hover {
+  color: #999e99;
+  transform: scale(1.3);
+}
+
+/* Active nav link styling */
+nav ul li a.active {
+  color: #999e99;
+  transform: scale(1.15);
+}
+
+/* light grey and enlarged when hovered over */
+a h4:hover {
+  color: #dbdcdb;
+  transform: scale(1.1);
+}
+
+.linkedin_link {
+  color: #949994
+}
+
+.grey-name {
+  color: #b8bcb8;
+}
+
+/* Profile picture styling - circular with outlining to look more friendly */
+.profile-pic {
+  width: 430px;
+  height: 430px;
+  border-radius: 30%;    /* make image slightly rounded */
+  object-fit: cover;
+}
+
+/* Game project image styling - slightly wide rectangle with outlining */
+.game-pic {
+  width: 265px;
+  height: 220px;
+  z-index: 1;
+  border-radius: 20%;
+  object-fit: cover;
+  border: 1px solid #6a6a6a;
+}
+
+/* iOS project image styling - long rectangle with outlining */
+.ios-pic {
+  width: 150px;
+  height: 320px;
+  border-radius: 7%;
+  object-fit: cover;
+  border: 1px solid #6a6a6a;
+}
+
+/* icon image styling */
+.icon-pic {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+/* Name header styling */
+.name-header {
+  margin-top: 20px;
+  font-size: 58px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/* Occupation header styling */
+.occupation-header {
+  margin-top: 5px;
+  font-size: 26px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+/* displaying name and occ in vstack */
+.name-occupation-col {
+  display: flex;      
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* home description styling */
+.short-home-des {
+  margin-top: 20px;
+  max-width: 530px;
+  font-size: 19px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+/* displaying name-occ column and photo in a row */
+.name-photo-row {
+  display: flex;      
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 60px;
+}
+
+/* displaying icons in a row */
+.icon-row {
+  display: flex;      
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Section header styling */
+.section-header {
+  margin-top: 90px;
+  font-size: 36px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+/* Project header styling */
+.project-header {
+  margin-top: 20px;
+  font-size: 23px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Project sub-header styling */
+.project-subheader {
+  margin-top: 15px;
+  font-size: 17px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+  max-width: 250px;
+}
+
+/* horizontal rules for neat layout - changing thickness, colour, and spacing */
+hr {
+  border: none;            /* removes default border */
+  height: 30px;             
+  background-color: #131413;
+  margin: 40px 0;          /* space above and below */
+}
+
+/* lighter coloured horizontal rule */
+.light-hr {
+  border: none;           
+  height: 30px;             
+  background-color: #1a1c1a;
+  margin: 40px 0;         
+}
+
+/* paragraphs - make text bit smaller than headers and lower width so its comfy to read */
+p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #ffffff;
+  margin: 0 auto;
+  max-width: 1100px;  /* so text has gap at edge of page for comfort to the eyes */
+}
+
+.about-me {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 55px;
+  max-width: 1050px;
+}
+
+.intro-projects {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 70px;
+  max-width: 550px;
+}
+
+strong { 	/* used for keywords, 700 weight was a bit too much for the eyes*/
+  font-weight: 400;
+}
+
+
+/* displaying game projects in row instead of grid so it doesn't look like a spreadsheet */
+.games-row {
+  display: flex;      
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 130px;
+  padding: 20px;
+}
+
+/* each game card - align vertically to look neater */
+.game-card {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  background-color: #181918;
+  border-radius: 15px;
+  padding: 40px;
+}
+
+/* the copyright */
+footer {
+  margin-top: 70px;
+  text-align: center;
+  padding: 20px 0px;
+  color: #ffffff;
+}
+
+.main-container,
+.game-card,
+.about-me,
+.intro-projects,
+footer {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.small_text {
+  font-size: 15px;
+}
+
+/* Fade-in animation for content */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+
+/*hover effect for more fun interaction*/
+.game-pic:hover {
+  transform: scale(1.06); /* just a slight enlargement to catch the eye */
+  transition: transform 0.2s ease; /* to give a sort of animated effect */
+}
+
+.ios-pic:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
