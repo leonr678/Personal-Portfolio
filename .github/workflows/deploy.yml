@@ -36,6 +36,9 @@ jobs:
       - name: Lint JS files
         run: npx eslint "**/*.js" || true
 
+      - name: Run JS tests
+        run: npm test
+
       # Deploy to GitHub Pages, but only if all previous steps passed
       - name: Deploy to GitHub Pages
         if: success()
