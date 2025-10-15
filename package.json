@@ -1,0 +1,26 @@
+{
+  "name": "portfoliowebsite",
+  "version": "1.0.0",
+  "description": "This is my personal portfolio website that I have written in JavaScript, HTML, and CSS. It showcases my web, mobile, and game dev projects.",
+  "main": "main.js",
+  "scripts": {
+    "lint": "eslint '**/*.js'",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonr678/Personal-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/leonr678/Personal-Portfolio/issues"
+  },
+  "homepage": "https://github.com/leonr678/Personal-Portfolio#readme",
+  "devDependencies": {
+    "eslint": "^9.37.0",
+    "live-server": "^1.2.2"
+  }
+}
