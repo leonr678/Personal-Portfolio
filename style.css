@@ -90,11 +90,26 @@ a h4:hover {
   color: #b8bcb8;
 }
 
-/* Profile picture styling - circular with outlining to look more friendly */
+/* Profile picture styling - circular to look more friendly */
+.about-pic {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;    
+  object-fit: cover;
+}
+
+/* Profile picture styling - circular to look more friendly */
+.about-pic-noncircular {
+  width: 270px;
+  height: 270px;   
+  object-fit: cover;
+}
+
+
 .profile-pic {
-  width: 430px;
-  height: 430px;
-  border-radius: 30%;    /* make image slightly rounded */
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;    /* make image slightly rounded */
   object-fit: cover;
 }
 
@@ -127,7 +142,7 @@ a h4:hover {
 /* Name header styling */
 .name-header {
   margin-top: 20px;
-  font-size: 58px;
+  font-size: 54px;
   font-weight: 400;
   color: #ffffff;
 }
@@ -152,7 +167,7 @@ a h4:hover {
 /* home description styling */
 .short-home-des {
   margin-top: 20px;
-  max-width: 530px;
+  max-width: 560px;
   font-size: 19px;
   font-weight: 300;
   color: #ffffff;
@@ -165,7 +180,7 @@ a h4:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 80px;
+  gap: 100px;
   padding: 60px;
 }
 
@@ -239,8 +254,8 @@ p {
   line-height: 1.6;
   color: #ffffff;
   margin-top: 50px;
-  margin-bottom: 55px;
-  max-width: 1050px;
+  margin-bottom: 20px;
+  max-width: 630px;
 }
 
 .intro-projects {
@@ -267,6 +282,17 @@ strong { 	/* used for keywords, 700 weight was a bit too much for the eyes*/
   justify-content: center;
   gap: 130px;
   padding: 20px;
+}
+
+
+.about-row {
+  display: flex;      
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  padding: 30px;
 }
 
 /* each game card - align vertically to look neater */
@@ -319,6 +345,39 @@ footer {
 .ios-pic:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease;
+}
+
+.skills-section {
+  width: 450px;
+}
+
+.skills-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.skill-card {
+  padding: 12px;
+  border-radius: 12px;
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  cursor: default;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  border-color: #666;
+  background-color: #2a2a2a;
 }
 
 @media (max-width: 768px) {
